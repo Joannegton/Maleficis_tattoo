@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+#menu{
+    background-color: chartreuse;
+
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    display: inline;
+    
+}
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 2px solid rgb(138, 255, 103);
+    display: inline-block;
+}
+
+#menu ul li a:hover{
+    text-decoration: underline;
+    color: rgb(74, 0, 158);
+    
+}
