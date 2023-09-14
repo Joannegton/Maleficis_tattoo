@@ -1,24 +1,44 @@
 @charset 'UTF-8';
 
-#menu{
-    background-color: chartreuse;
+:root{
+    --esmeralda: #23d16c;
+    --bege: #F2e2d2;
+}
 
+body{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    background-image: url('/imagens/fundo.jpg');
+
+    border: solid ;    
+}
+#menu{
+    background: linear-gradient(to left, #f2e2d293, #0000008f 75%);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 #menu ul{
     list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
 }
 
 #menu ul li{
     display: inline;
+    margin: auto;
     
 }
 #menu ul li a{
     text-decoration: none;
-    color: black;
-    padding: 5px;
-    border: 2px solid rgb(138, 255, 103);
+    color: var(--esmeralda);
+    padding: 10px;
     display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 #menu ul li a:hover{
