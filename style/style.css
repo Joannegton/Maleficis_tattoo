@@ -13,6 +13,10 @@ body{
 
     border: solid ;    
 }
+
+header{
+    background-image: url();
+}
 #menu{
     background: linear-gradient(to left, #f2e2d293, #0000008f 75%);
     position: -webkit-sticky;
