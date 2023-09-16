@@ -10,18 +10,29 @@ body{
     height: 100vh;
     margin: auto;
     background-image: url('/imagens/fundo.jpg');
-
     border: solid ;    
 }
 
-header{
-    background-image: url();
+.slider{
+    height: 150px;
+    width: 70%;
+    
+
+    border: solid 1px red; 
 }
+
 #menu{
     background: linear-gradient(to left, #f2e2d293, #0000008f 75%);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    display: flex;
+}
+
+.logo{ 
+    height: 10vh;
+    width: 10vw;
+    display: inline;
 }
 
 #menu ul{
@@ -29,6 +40,7 @@ header{
     margin: auto;
     padding: 0;
     text-align: center;
+    display: inline;
 }
 
 #menu ul li{
