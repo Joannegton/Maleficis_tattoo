@@ -7,17 +7,30 @@
 
 body{
     width: 80vw;
-    height: 100vh;
     margin: auto;
     background-image: url('/imagens/fundo.jpg');
     border: solid ;    
 }
 
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+.texto_negrito{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 1.5em;
+    font-weight: bold;
+}
+
 .slider{
     height: 150px;
-    width: 70%;
-    
-
+    width: 70%; 
+    margin: 3px auto;
     border: solid 1px red; 
 }
 
@@ -62,3 +75,35 @@ body{
     color: rgb(74, 0, 158);
     
 }
+
+.fundo_post{
+    border: solid 1px red; 
+}
+
+.container{
+    border: solid 1px black; 
+    display: flex;
+    margin: 1em;
+}
+
+.container > img{
+    height: 600px;
+}
+.container > aside{
+    margin: auto 10px;
+    text-align: center;   
+}
+
+.container > aside > button{
+    text-align: center;   
+    font-size: 1.3em;
+    background-color: var(--esmeralda);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.726) ;
+}
+
+.container > aside > button > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
