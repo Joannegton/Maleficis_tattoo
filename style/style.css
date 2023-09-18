@@ -3,7 +3,8 @@
 :root{
     --esmeralda: #23d16c;
     --bege: #F2e2d2;
-    --fundo: #ece8e3;
+    --fundo: #948e878f;
+    --fundo_post: #948e878f;
     
 }
 
@@ -11,54 +12,70 @@ body{
     background-color: var(--fundo);
     width: 80vw;
     margin: auto;
-    background-image: url('/imagens/fundo.jpg');
-    border: solid ;    
+    background-image: url('/imagens/fundo.jpg');  
+    padding: 0;
 }
-
+main{
+    background-color: var(--fundo);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
 .texto{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.1em;
     text-align: justify;
     text-indent: 1.5em;
+    line-height: 1.5;
+    margin: 1%;
 }
 
 .texto_negrito{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.1em;
     text-align: justify;
     text-indent: 1.5em;
     font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
 }
+.titulo{
 
-.slider{
-    height: 150px;
-    width: 70%; 
-    margin: 3px auto;
-    border: solid 1px red; 
 }
+.subtitulo{
+    color: var(--esmeralda);
+    font-size: 1.8em;
+    background-color: rgb(29, 37, 29);
+    text-align: center;  
+    height: 1.9em;
+    padding-top: 2.5%;
+    margin: 0 0 15px;
+    border-radius: 5px;
+}  
 
-#menu{
-    background: linear-gradient(to left, #ece9e693, #3f3c3c8f 75%);
-    position: -webkit-sticky;
+/*menu*/
+.faixa_menu{
+    background: linear-gradient(to left, #ece9e67e, #000000a4 40%);
     position: sticky;
     top: 0;
     display: flex;
+    height: 100px;
+    align-items: center;
+    transition: all .5s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    justify-content: space-between
 }
-
 .logo{ 
-    height: 10vh;
-    width: 10vw;
-    display: inline;
+    width:12vw;
+    margin-left: 1%;
 }
-
 #menu ul{
     list-style: none;
     margin: auto;
     padding: 0;
     text-align: center;
-    display: inline;
 }
-
 #menu ul li{
     display: inline;
     margin: auto;
@@ -69,35 +86,48 @@ body{
     color: var(--esmeralda);
     padding: 10px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.3em;
     font-weight: bolder;
 }
-
 #menu ul li a:hover{
     text-decoration: underline;
-    color: #07423d;
-    
+    color: #04bdad;  
+}
+.redes_sociais{
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.021);   
 }
 
-.fundo_post{
-    border: solid 1px red; 
-}
 
 /*home*/
+.slider{
+    height: 250px;
+    width: 800px; 
+    margin: 3px auto;
+    border: solid 1px red; 
+}
 .container_somos{
-    border: solid 1px black; 
+    border-radius: 5px;
     display: flex;
     margin: 1em;
+    background-color: var(--fundo);
+    padding-top: 1em;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
 }
 
 .container_somos > img{
-    height: 600px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 0 1em;
 }
+
+
 .container_somos > aside{
     margin: auto 10px;
     text-align: center;
     height: 100%;
     width: 100%; 
+    border-radius: 5px;
 }
 
 .botao{
@@ -114,16 +144,12 @@ body{
 }
 
 .blog{
-    border: solid 1px green;
     display: flex;
     flex-direction: column;
-}
-
-.fundo_subtitulo{
-    background-color: rgb(29, 37, 29);
-    text-align: center;
-    color: var(--esmeralda);
-    
+    background-color: var(--fundo_post);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+    margin: 1em;
+    border-radius: 5px;
 }
 
 .post_blog{
@@ -133,15 +159,41 @@ body{
 
 .container_flash{
     text-align: center;
+    background-color: var(--fundo_post);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.container_video{
+    align-items: center;
+    display: flex;
 }
 .flashs_video{
     max-height: 500px;
-    margin: auto;
+    margin: 0 10px;
+    border-radius: 5px;
 }
 
+.localizacao{
+    text-align: center;
+    background-color: var(--fundo_post);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
+    margin: 1%;
+}
+.maps{
+    width: 98%;
+    height: 300px;
+    border: 0;
+    border-radius: 5px;
+}
 
-
-
+footer, footer>p{
+    text-align: center;
+    background-color: var(--esmeralda);
+    margin: 0;
+}
 
 /*Portfólio*/
 .container_portfolio{
@@ -207,19 +259,22 @@ body{
     display: flex;
     width: 100%;
     align-content: space-between;
- 
 }
 .post{
     width: 32%;
-    display: inline;
     margin: 1%;
+    background-color: var(--fundo_post);
+    border-radius: 5px;
 }
 .post > a> img{
     max-width: 98%;
+    border-radius: 5px;
 }
-.post > aside{
+
+.autoria{
     color: rgb(59, 59, 59);
-    font-size: .8rem;
+    font-size: .9rem;
+    text-align: right;
 }
 section.posts{
     background-color: var(--fundo);
