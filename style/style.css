@@ -3,9 +3,12 @@
 :root{
     --esmeralda: #23d16c;
     --bege: #F2e2d2;
+    --fundo: #ece8e3;
+    
 }
 
 body{
+    background-color: var(--fundo);
     width: 80vw;
     margin: auto;
     background-image: url('/imagens/fundo.jpg');
@@ -35,7 +38,7 @@ body{
 }
 
 #menu{
-    background: linear-gradient(to left, #f2e2d293, #0000008f 75%);
+    background: linear-gradient(to left, #ece9e693, #3f3c3c8f 75%);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -72,7 +75,7 @@ body{
 
 #menu ul li a:hover{
     text-decoration: underline;
-    color: rgb(74, 0, 158);
+    color: #07423d;
     
 }
 
@@ -167,6 +170,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.portfolio{
+    background-color: var(--fundo);
+
+}
 
 /* Artistas*/
 .container_frase{
@@ -198,7 +205,7 @@ body{
 /*blog*/
 .posts{
     display: flex;
-    width: 98%;
+    width: 100%;
     align-content: space-between;
  
 }
@@ -214,5 +221,12 @@ body{
     color: rgb(59, 59, 59);
     font-size: .8rem;
 }
+section.posts{
+    background-color: var(--fundo);
 
+}
 
+.banner_post {
+    background-color: var(--fundo);
+
+}
