@@ -80,6 +80,7 @@ body{
     border: solid 1px red; 
 }
 
+/*home*/
 .container_somos{
     border: solid 1px black; 
     display: flex;
@@ -96,18 +97,48 @@ body{
     width: 100%; 
 }
 
-.container_somos > aside > button{
+.botao{
     text-align: center;   
     font-size: 1.3em;
     background-color: var(--esmeralda);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.726) ;
 }
 
-.container_somos > aside > button > a{
+.botao > a{
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
+.blog{
+    border: solid 1px green;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo_subtitulo{
+    background-color: rgb(29, 37, 29);
+    text-align: center;
+    color: var(--esmeralda);
+    
+}
+
+.post_blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_flash{
+    text-align: center;
+}
+.flashs_video{
+    max-height: 500px;
+    margin: auto;
+}
+
+
+
+
 
 /*Portfólio*/
 .container_portfolio{
