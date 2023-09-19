@@ -204,7 +204,6 @@ footer, footer>p{
 }
 .foto{
     max-width: 32%;
-    display: inline;
 }
 .tela-cheia{
     position: fixed;
@@ -226,6 +225,27 @@ footer, footer>p{
     background-color: var(--fundo);
 
 }
+
+/*Flashs*/
+.container_foto{
+    border: solid;
+}
+.flash_foto{
+    width: 98%;
+}
+.container_foto > p{
+    font-size: 1.2em;
+    margin: 0;
+}
+.interesse{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.interesse > h3{
+    margin: auto;
+}
+
+
 
 /* Artistas*/
 .container_frase{
