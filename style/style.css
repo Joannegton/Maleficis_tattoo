@@ -263,14 +263,9 @@ transform: scale(1.05);
     border-radius: 5px;
 }
 
-.blog h2{
 
-
-
-}
-
-
-.post_blog{
+.container_blog{
+    display: flex;
     justify-content: space-between;
 }
 
@@ -393,6 +388,7 @@ footer, footer>p{
 /*blog*/
 .posts{
     width: 100%;
+    display: flex;
     align-content: space-between;
 }
 .post{
@@ -418,5 +414,18 @@ section.posts{
 
 .banner_post {
     background-color: var(--fundo);
-
 }
+
+/*Post blog*/
+
+
+
+
+
+
+
+
+
+
+
+
