@@ -95,21 +95,16 @@ img{
     text-decoration: underline;
     color: #04bdad;  
 }
-.redes_sociais{
-    margin-right: 2%;
-    background-color: none;  
-}
+.contatos{margin-right: 2%;
+background-color: none;}
 
-.redes_sociais ul{
-    list-style: none;
-    margin: auto;
-    text-align: center;
-}
+.contatos ul{list-style: none;
+margin: auto;
+text-align: center;}
 
-.redes_sociais ul li{
-    display: inline;
-    margin: auto;
-}
+.contatos li{
+display: inline;
+margin: auto;}
 
 /*Hover Redes*/
 #Port_01:hover{transform: scale(1.05);}
@@ -375,4 +370,17 @@ section.posts{
 }
 .recomendacoes > a > img{
     width: 95%;
+}
+
+/* Orçamento*/ 
+#Formulario{
+    width: fit-content;
+}
+
+
+.horario_funcionamento{
+    display:flexbox;
+}
+ul.redes_sociais{
+    size: 80vw;
 }
