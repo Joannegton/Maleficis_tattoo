@@ -111,101 +111,31 @@ img{
     margin: auto;
 }
 
-#Port_01:hover{
-transform: scale(1.05);
-}
-
-#Port_02:hover{
-transform: scale(1.05);
-}
-
-#Port_03:hover{
-transform: scale(1.05);
-}
-
-#Port_04:hover{
-transform: scale(1.05);
-}
-
-#Port_05:hover{
-transform: scale(1.05);
-}
-
-#Port_06:hover{
-transform: scale(1.05);
-}
-
-#Port_07:hover{
-transform: scale(1.05);
-}
-
-#Port_08:hover{
-transform: scale(1.05);
-}
-
-#Port_09:hover{
-transform: scale(1.05);
-}
-
-#Port_10:hover{
-transform: scale(1.05);
-}
-
-#Port_11:hover{
-transform: scale(1.05);
-}
-
-#Port_12:hover{
-transform: scale(1.05);
-}
-
-#Port_13:hover{
-transform: scale(1.05);
-}
-
-#Port_14:hover{
-transform: scale(1.05);
-}
-
-#Port_15:hover{
-transform: scale(1.05);
-}
-
-#Port_16:hover{
-transform: scale(1.05);
-}
-
-#Port_17:hover{
-transform: scale(1.05);
-}
-
-#Port_18:hover{
-transform: scale(1.05);
-}
-
-#Port_19:hover{
-transform: scale(1.05);
-}
-
-#Port_20:hover{
-transform: scale(1.05);
-}
-
-#Port_21:hover{
-transform: scale(1.05);
-}
-
-#insta:hover{
-    transform: scale(1.2);
-}
-
-#whats:hover{
-    transform: scale(1.2);
-}
-
-#face:hover{
-    transform: scale(1.2);
-}
+/*Hover Redes*/
+#Port_01:hover{transform: scale(1.05);}
+#Port_02:hover{transform: scale(1.05);}
+#Port_03:hover{transform: scale(1.05);}
+#Port_04:hover{transform: scale(1.05);}
+#Port_05:hover{transform: scale(1.05);}
+#Port_06:hover{transform: scale(1.05);}
+#Port_07:hover{transform: scale(1.05);}
+#Port_08:hover{transform: scale(1.05)}
+#Port_09:hover{transform: scale(1.05);}
+#Port_10:hover{transform: scale(1.05);}
+#Port_11:hover{transform: scale(1.05);}
+#Port_12:hover{transform: scale(1.05);}
+#Port_13:hover{transform: scale(1.05);}
+#Port_14:hover{transform: scale(1.05);}
+#Port_15:hover{transform: scale(1.05);}
+#Port_16:hover{transform: scale(1.05);}
+#Port_17:hover{transform: scale(1.05);}
+#Port_18:hover{transform: scale(1.05);}
+#Port_19:hover{transform: scale(1.05);}
+#Port_20:hover{transform: scale(1.05);}
+#Port_21:hover{transform: scale(1.05);}
+#insta:hover{transform: scale(1.2);}
+#whats:hover{transform: scale(1.2);}
+#face:hover{transform: scale(1.2);}
 
 /*home*/
 .slider{
@@ -446,14 +376,3 @@ section.posts{
 .recomendacoes > a > img{
     width: 95%;
 }
-
-
-
-
-
-
-
-
-
-
-
