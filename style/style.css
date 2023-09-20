@@ -58,6 +58,9 @@ main{
     position:initial;
 }  
 
+img{
+    border-radius: 5px;
+}
 
 
 /*menu*/
@@ -418,6 +421,23 @@ section.posts{
 
 /*Post blog*/
 
+.containt_blog{
+    width: 70%;
+    margin: 0 2%;
+}
+.containt_blog > h3{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.719) 40%, #ece9e67e);
+    color: var(--esmeralda);
+    font-size: 1.5em;   
+    border-radius: 5px;
+}
+.recomendacoes{
+    width: 25%;
+}
+
+.recomendacoes > a > img{
+    width: 95%;
+}
 
 
 
