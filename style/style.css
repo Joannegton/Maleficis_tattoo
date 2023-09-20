@@ -12,13 +12,13 @@ body{
     background-color: var(--fundo);
     width: 80vw;
     margin: auto;
-    background-image: url('/imagens/fundo.jpg');  
+    background-image: url('/imagens/fundo.jpg'); 
     padding: 0;
 }
 main{
     background-color: var(--fundo);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -46,13 +46,19 @@ main{
 .subtitulo{
     color: var(--esmeralda);
     font-size: 1.8em;
-    background-color: rgb(29, 37, 29);
+    background-image: url('/imagens/Banner_Fundo.png');
+    background-clip: inherit;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;  
     height: 1.9em;
     padding-top: 2.5%;
     margin: 0 0 15px;
-    border-radius: 5px;
+    position:initial;
 }  
+
+
 
 /*menu*/
 .faixa_menu{
@@ -95,9 +101,115 @@ main{
 }
 .redes_sociais{
     margin-right: 2%;
-    background-color: rgba(0, 0, 0, 0.021);   
+    background-color: none;  
 }
 
+.redes_sociais ul{
+    list-style: none;
+    margin: auto;
+    text-align: center;
+}
+
+.redes_sociais ul li{
+    display: inline;
+    margin: auto;
+}
+
+#Port_01:hover{
+transform: scale(1.05);
+}
+
+#Port_02:hover{
+transform: scale(1.05);
+}
+
+#Port_03:hover{
+transform: scale(1.05);
+}
+
+#Port_04:hover{
+transform: scale(1.05);
+}
+
+#Port_05:hover{
+transform: scale(1.05);
+}
+
+#Port_06:hover{
+transform: scale(1.05);
+}
+
+#Port_07:hover{
+transform: scale(1.05);
+}
+
+#Port_08:hover{
+transform: scale(1.05);
+}
+
+#Port_09:hover{
+transform: scale(1.05);
+}
+
+#Port_10:hover{
+transform: scale(1.05);
+}
+
+#Port_11:hover{
+transform: scale(1.05);
+}
+
+#Port_12:hover{
+transform: scale(1.05);
+}
+
+#Port_13:hover{
+transform: scale(1.05);
+}
+
+#Port_14:hover{
+transform: scale(1.05);
+}
+
+#Port_15:hover{
+transform: scale(1.05);
+}
+
+#Port_16:hover{
+transform: scale(1.05);
+}
+
+#Port_17:hover{
+transform: scale(1.05);
+}
+
+#Port_18:hover{
+transform: scale(1.05);
+}
+
+#Port_19:hover{
+transform: scale(1.05);
+}
+
+#Port_20:hover{
+transform: scale(1.05);
+}
+
+#Port_21:hover{
+transform: scale(1.05);
+}
+
+#insta:hover{
+    transform: scale(1.2);
+}
+
+#whats:hover{
+    transform: scale(1.2);
+}
+
+#face:hover{
+    transform: scale(1.2);
+}
 
 /*home*/
 .slider{
@@ -144,7 +256,6 @@ main{
 }
 
 .blog{
-    display: flex;
     flex-direction: column;
     background-color: var(--fundo_post);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
@@ -152,8 +263,14 @@ main{
     border-radius: 5px;
 }
 
+.blog h2{
+
+
+
+}
+
+
 .post_blog{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -204,6 +321,7 @@ footer, footer>p{
 }
 .foto{
     max-width: 32%;
+    border-radius: 5px;
 }
 .tela-cheia{
     position: fixed;
@@ -274,7 +392,6 @@ footer, footer>p{
 
 /*blog*/
 .posts{
-    display: flex;
     width: 100%;
     align-content: space-between;
 }
