@@ -39,20 +39,21 @@ main{
     font-weight: bold;
     line-height: 1.5;
     margin: 0;
+    
 }
 .subtitulo{
     color: var(--esmeralda);
-    font-size: 1.8em;
+    font-size: 2.1em;
     background-image: url('/imagens/Banner_Fundo.png');
     background-clip: inherit;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5px;
-    text-align: center;  
-    height: 1.9em;
-    padding-top: 2.5%;
+    text-align: center;
+    padding: 1.5% 0;  
     margin: 0 0 15px;
     position:initial;
+ 
 }  
 
 img{
