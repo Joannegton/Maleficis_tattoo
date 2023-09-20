@@ -6,6 +6,9 @@
     --fundo: #948e878f;
     --fundo_post: #948e878f;
 }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
     background-color: var(--fundo);
     width: 80vw;
@@ -447,11 +450,41 @@ section.posts{
     width: 95%;
 }
 
+/*Orçamentos*/
+#container_orcamento{
+    display: flex;
+    align-items: center;
+    background-color: var(--fundo);
+    padding-bottom: 1%;
+    margin: 0 1%;
+    border-radius: 5px;
 
+}
 
+table{
+    width: 30%;
+    border-collapse: collapse;
+    margin-left: 10%;
+}
 
+td, th{
+    border: solid 1px rgb(1, 51, 1);
+    text-align: center;
+    vertical-align: middle;
+}
 
+#container_orcamento > form{
+    width: 35%;
+    position: relative;
+    margin-left: 20%;
+    margin-top: 1%;
 
+    border: solid;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
 
 
 

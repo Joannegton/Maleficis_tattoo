@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="imagens/agulha.png" type="image/x-icon">
-    <title>Home</title>
+    <title>Orçamentos</title>
 </head>
 <body>
 
@@ -28,11 +28,11 @@
                 <li><a href='https://www.instagram.com/maleficis.tattoo/' target="_blank"><img id="insta" src="imagens/insta.png" width="55vw" alt="insta"></a></li>
                 <li><a href="https://wa.me/5511963817270" target="_blank"><img id="whats" src="imagens/whats.png" alt="whatsapp" width="55vw"></a></li>
             </ul>
-
     </header>
 
-<main>       
-    <section id="orcamento">
+<main>     
+    <h2 class="subtitulo">Solicite seu Orçamento</h2>  
+    <section id="container_orcamento">
         <table >
             <caption>Valor minimo de tatuagens</caption>
             <thead>
@@ -74,35 +74,51 @@
         <form action="bancodados.php" method="post" autocomplete="on">
 
             <div class="campo">
-                <label for="nome" >Nome</label>
+                <label for="nome" >Nome Completo:</label>
                 <input type="text" id="nome" name="nome" autocomplete="nome" placeholder="Wellington Joanne" autocomplete='on'>
             </div>
             <div class="campo">
-                <label for="tel">Whatsapp</label>
-                <input type="text" id="tel" name="tel" autocomplete="tel" placeholder="ex: 1191234-5678">
+                <label for="tel">Whatsapp:</label>
+                <input type="text" id="tel" name="tel" autocomplete="tel" placeholder="ex: 11912345678">
             </div>
             <div class="campo">
-                <label for="cidade">Cidade</label>
-                <input type="text" id="cidade" name="cidade" autocomplete="address-level3" placeholder="ex: taboão da Serra"> 
+                <label for="tom_pele">Tom de pele:</label>
+                <img src="imagens/tons_pele.png" alt="Tons de pele" width="55%">
+                <select name="tom_pele" id="selecionador">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
             </div>
             <div class="campo">
                 <label for="local">Local do corpo</label>
                 <input type="text" id="local" name="local" autocomplete="off" placeholder="ex: Antebraço"> 
             </div>
             <div class="campo">
-                <label for="altura">Altura da Tattoo(cm)</label>
-                <input type="text" id="altura" name="altura" autocomplete="off" placeholder="ex: 10cm">
+                <label for="dimensoes">Dimensões da Tattoo(cm)</label>
+                <input type="text" id="dimensoes" name="dimensoes" autocomplete="off" placeholder="ex: 10cm x 6cm">
             </div>
             <div class="campo">
-                <label for="data">Data</label>
+                <label for="data">Data do Rabisco</label>
                 <input type="datetime-local" name="data" id="data" autocomplete="off">
             </div>
             <div class="campo">
-                <label for="arquivo">Insira uma imagem</label>
+                <label for="arquivo">Imagem de exemplo</label>
                 <input type="file" name="arquivo" id="arquivo">
             </div>
+            <div class="campo">
+                <label for="arquivo2">Imagem do local(corpo)</label>
+                <input type="file" name="arquivo2" id="arquivo">
+            </div>
+            <div class="campo">
+                <label for="historia">Conte a historia da sua Tattoo:</label>
+                <input type="text" name="historia" id="historia">
+            </div>
 
-            <input type="submit" value="Enviar" style="text-align: center;" >
+            <input type="submit" value="Enviar" class="botao"  >
         </form>
     </section>
 
