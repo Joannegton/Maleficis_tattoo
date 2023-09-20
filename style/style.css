@@ -212,12 +212,12 @@ transform: scale(1.05);
     height: 250px;
     width: 800px; 
     margin: 3px auto;
-    border: solid 1px red; 
+ 
 }
 .container_somos{
     border-radius: 5px;
     display: flex;
-    margin: 1em;
+    margin: 2em 1em;
     background-color: var(--fundo);
     padding-top: 1em;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
@@ -281,6 +281,10 @@ transform: scale(1.05);
     max-height: 500px;
     margin: 0 10px;
     border-radius: 5px;
+    margin-left: 10%;
+}
+.container_video > div{
+    margin-right: 10%;
 }
 
 .localizacao{
