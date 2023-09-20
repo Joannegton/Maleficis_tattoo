@@ -376,10 +376,6 @@ section.posts{
 }
 
 /* Orçamento*/ 
-#Formulario{
-    width: fit-content;
-}
-
 
 .horario_funcionamento{
     display:flexbox;
@@ -387,7 +383,7 @@ section.posts{
 ul.redes_sociais{
     size: 80vw;
 }
-/*Orçamentos*/
+
 #container_orcamento{
     display: flex;
     align-items: center;
@@ -395,7 +391,6 @@ ul.redes_sociais{
     padding-bottom: 1%;
     margin: 0 1%;
     border-radius: 5px;
-
 }
 
 table{
@@ -412,10 +407,8 @@ td, th{
 
 #container_orcamento > form{
     width: 35%;
-    position: relative;
-    margin-left: 20%;
     margin-top: 1%;
-
+    margin-left: 18%;
     border: solid;
 }
 .campo{
