@@ -5,9 +5,7 @@
     --bege: #F2e2d2;
     --fundo: #948e878f;
     --fundo_post: #948e878f;
-    
 }
-
 body{
     background-color: var(--fundo);
     width: 80vw;
@@ -30,7 +28,6 @@ main{
     line-height: 1.5;
     margin: 1%;
 }
-
 .texto_negrito{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
@@ -40,17 +37,14 @@ main{
     line-height: 1.5;
     margin: 0;
 }
-.titulo{
-
-}
 .subtitulo{
     color: var(--esmeralda);
     font-size: 1.8em;
     background-image: url('/imagens/Banner_Fundo.png');
     background-clip: inherit;
-    border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 5px;
     text-align: center;  
     height: 1.9em;
     padding-top: 2.5%;
@@ -61,7 +55,6 @@ main{
 img{
     border-radius: 5px;
 }
-
 
 /*menu*/
 .faixa_menu{
@@ -424,6 +417,8 @@ section.posts{
 .containt_blog{
     width: 70%;
     margin: 0 2%;
+    text-align: center;
+    margin-bottom: 3%;
 }
 .containt_blog > h3{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.719) 40%, #ece9e67e);
@@ -431,10 +426,19 @@ section.posts{
     font-size: 1.5em;   
     border-radius: 5px;
 }
-.recomendacoes{
+.container_recomendacoes{
     width: 25%;
+    border: solid 1px rgba(0, 0, 0, 0.445);
+    border-radius: 5px;
+    margin-right: 0.5%;
 }
 
+.recomendacoes{
+    text-align: center;
+    border: solid 1px rgba(172, 255, 47, 0.445);
+    border-radius: 5px;
+    margin: 3px;
+}
 .recomendacoes > a > img{
     width: 95%;
 }
