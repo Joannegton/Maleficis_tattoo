@@ -89,19 +89,18 @@ img {
     margin: auto;
     padding: 0;
     text-align: center;
+    display: flex;
 }
 
 #menu ul li {
     display: inline;
     margin: auto;
-
 }
 
 #menu ul li a {
     text-decoration: none;
     color: var(--esmeralda);
     padding: 10px;
-    display: inline-block;
     font-size: 1.3em;
     font-weight: bolder;
 }
