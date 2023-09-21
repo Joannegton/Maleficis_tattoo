@@ -15,7 +15,7 @@ body {
     background-color: var(--fundo);
     width: 80vw;
     margin: auto;
-    background-image: url('/imagens/fundo.jpg');
+    background-image: url('../imagens/fundo.jpg');
     padding: 0;
 }
 
