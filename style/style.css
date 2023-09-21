@@ -50,7 +50,7 @@ main {
 .subtitulo {
     color: var(--esmeralda);
     font-size: 2.1em;
-    background-image: url('../imagens/fundo.jpg');
+    background-image: url('../imagens/Banner_Fundo.png');
     background-clip: inherit;
     background-repeat: no-repeat;
     background-position: center;
@@ -502,11 +502,13 @@ ul.redes_sociais {
     margin: 0 1%;
     border-radius: 5px;
 }
+.tabela{
+    background-color: var(--fundo);
+    margin-left: 10%;
+}
 
 table {
-    width: 30%;
     border-collapse: collapse;
-    margin-left: 10%;
 }
 
 td,
@@ -516,12 +518,6 @@ th {
     vertical-align: middle;
 }
 
-#container_orcamento>form {
-    width: 35%;
-    margin-top: 1%;
-    margin-left: 18%;
-    border: solid;
-}
 
 .campo {
     display: flex;
@@ -531,8 +527,8 @@ th {
 #form_orcamentos {
     width: 35%;
     margin-top: 1%;
-    margin-left: 18%;
-    border: solid;
+    margin-left: 15%;
+    border: solid 1px rgb(1, 51, 1);
     text-align: center;
 }
 

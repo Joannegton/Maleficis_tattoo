@@ -33,46 +33,48 @@
     <main>
         <h2 class="subtitulo">Solicite seu Orçamento</h2>
         <section id="container_orcamento">
-            <table>
-                <caption>Valor minimo de tatuagens</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Tamanhos</th>
-                        <th scope="col">Valor aproximado*</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    </tr>
-                    <tr>
-                        <td>5cm</td>
-                        <td>R$70</td>
-                    </tr>
-                    <tr>
-                        <td>7cm</td>
-                        <td>R$100</td>
-                    </tr>
-                    <tr>
-                        <td>10cm</td>
-                        <td>R$120</td>
-                    </tr>
-                    <tr>
-                        <td>13cm</td>
-                        <td>R$150</td>
-                    </tr>
-                    <tr>
-                        <td>15cm</td>
-                        <td>R$200</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2"><strong>*</strong><small style="font-size: 0.7em;">Valores sujeitos a alteração
-                                de acordo com o detalhamento da arte</small></td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="tabela">
+                <table>
+                    <caption>Valor minimo de tatuagens</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tamanhos</th>
+                            <th scope="col">Valor aproximado*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tr>
+                        <tr>
+                            <td>5cm</td>
+                            <td>R$70</td>
+                        </tr>
+                        <tr>
+                            <td>7cm</td>
+                            <td>R$100</td>
+                        </tr>
+                        <tr>
+                            <td>10cm</td>
+                            <td>R$120</td>
+                        </tr>
+                        <tr>
+                            <td>13cm</td>
+                            <td>R$150</td>
+                        </tr>
+                        <tr>
+                            <td>15cm</td>
+                            <td>R$200</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><strong>*</strong><small style="font-size: 0.7em;">Valores sujeitos a alteração
+                                    de acordo com o detalhamento da arte</small></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
 
-            <form action="bancodados.php" method="post" autocomplete="on">
+            <form action="bancodados.php" method="post" autocomplete="on" id="form_orcamentos">
 
                 <div class="campo">
                     <label for="nome">Nome Completo:</label>
@@ -85,7 +87,7 @@
                 </div>
                 <div class="campo">
                     <label for="tom_pele">Tom de pele:</label>
-                    <img src="imagens/tons_pele.png" alt="Tons de pele" width="55%" style="margin: 1% 0;>
+                    <img src="imagens/tons_pele.png" alt="Tons de pele" width="55%" style="margin: 1% 0";>
                     <select name="tom_pele" id="selecionador">
                         <option value="1">1</option>
                         <option value="2">2</option>
