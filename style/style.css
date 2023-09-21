@@ -111,18 +111,18 @@ img {
     color: #04bdad;
 }
 
-.contatos {
+.redes_sociais{
     margin-right: 2%;
     background-color: none;
 }
 
-.contatos ul {
+.redes_sociais ul {
     list-style: none;
     margin: auto;
     text-align: center;
 }
 
-.contatos li {
+.redes_sociais li {
     display: inline;
     margin: auto;
 }
