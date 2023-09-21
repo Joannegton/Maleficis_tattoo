@@ -50,7 +50,7 @@ main {
 .subtitulo {
     color: var(--esmeralda);
     font-size: 2.1em;
-    background-image: url('/imagens/Banner_Fundo.png');
+    background-image: url('../imagens/fundo.jpg');
     background-clip: inherit;
     background-repeat: no-repeat;
     background-position: center;
