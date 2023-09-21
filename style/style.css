@@ -70,7 +70,7 @@ img{
     align-items: center;
     transition: all .5s ease;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    justify-content: space-between
+    justify-content: space-between;
 }
 .logo{ 
     width:12vw;
@@ -311,7 +311,7 @@ footer, footer>p{
 .container_artista > aside > h3{
     margin-right: 2%;
     text-align: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*blog*/
