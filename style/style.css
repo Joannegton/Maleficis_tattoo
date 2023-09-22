@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--fundo);
-    width: 99vw;
+    width: 97vw;
     margin: auto;
     background-image: url('../imagens/fundo.jpg');
     padding: 0;
@@ -344,7 +344,13 @@ footer>p{
     display: flex;
     align-content: space-between;
     justify-content: center;
-    align-items: center;        margin: 5% 0 5% 2%;
+    align-items: center;        
+    margin: 5% 0 5% 2%;
+    width: 67%;
+}
+
+.interessado > img{
+    margin: 0 1%;
 }
 .horario_funcionamento{
     position: absolute;
