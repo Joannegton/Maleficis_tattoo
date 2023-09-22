@@ -67,6 +67,11 @@ img {
     border-radius: 5px;
 }
 
+.flashes_fotos{
+    width: 26%;
+    display: inline;
+}
+
 /*menu*/
 .faixa_menu {
     background: linear-gradient(to left, #ece9e67e, #000000a4 40%);
@@ -111,7 +116,7 @@ img {
     color: #04bdad;
 }
 
-.redes_sociais{
+.redes_sociais {
     margin-right: 3%;
     background-color: none;
 }
@@ -261,6 +266,8 @@ img {
     font-size: 1.3em;
     background-color: var(--esmeralda);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.726);
+    border: none;
+    border-radius: 5px;
 }
 
 .botao>a {
@@ -304,7 +311,7 @@ img {
 }
 
 .container_video>div {
-    margin-right: 10%;
+    margin-right: none;
 }
 
 .localizacao {
@@ -322,39 +329,40 @@ img {
     border-radius: 5px;
 }
 
-footer{
+footer {
     text-align: center;
     background-color: #030800;
     margin: 0;
 }
-footer>p{
+
+footer>p {
     margin: 0;
     background-color: var(--bege);
 }
-.informacoes{
-    width: 80vw;
+
+.informacoes {
+    width:max-content;
     display: flex;
     align-items: center;
     margin: auto;
     position: relative;
 }
 
-.interessado{
+.interessado {
     color: var(--esmeralda);
-    display: flex;
     align-content: space-between;
     justify-content: center;
-    align-items: center;        
+    align-items: center;
     margin: 5% 0 5% 2%;
-    width: 67%;
+    display: inline;
 }
 
-.interessado > img{
+.interessado>img {
     margin: 0 1%;
 }
-.horario_funcionamento{
-    position: absolute;
-    right: 0;
+
+.horario_funcionamento {
+    float: right;
     margin: 2%;
     color: var(--esmeralda);
 }
@@ -531,7 +539,8 @@ ul.redes_sociais {
     margin: 0 1%;
     border-radius: 5px;
 }
-.tabela{
+
+.tabela {
     background-color: var(--fundo);
     margin-left: 10%;
 }
