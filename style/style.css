@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--fundo);
-    width: 100vw;
+    width: 99vw;
     margin: auto;
     background-image: url('../imagens/fundo.jpg');
     padding: 0;
