@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--fundo);
-    width: 80vw;
+    width: 100vw;
     margin: auto;
     background-image: url('../imagens/fundo.jpg');
     padding: 0;
@@ -22,8 +22,9 @@ body {
 main {
     background-color: var(--fundo);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    padding-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -321,11 +322,35 @@ img {
     border-radius: 5px;
 }
 
-footer,
-footer>p {
+footer{
     text-align: center;
-    background-color: var(--esmeralda);
+    background-color: #030800;
     margin: 0;
+}
+footer>p{
+    margin: 0;
+    background-color: var(--bege);
+}
+.informacoes{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.interessado{
+    color: var(--esmeralda);
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;        margin: 5% 0 5% 2%;
+}
+.horario_funcionamento{
+    position: absolute;
+    right: 0;
+    margin: 2%;
+    color: var(--esmeralda);
 }
 
 /*Portfólio*/
@@ -361,7 +386,6 @@ footer>p {
 
 .portfolio {
     background-color: var(--fundo);
-
 }
 
 /*Flashs*/
