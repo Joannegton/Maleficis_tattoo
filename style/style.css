@@ -276,6 +276,7 @@ img {
     font-weight: bold;
 }
 
+
 .blog {
     flex-direction: column;
     background-color: var(--fundo_post);
@@ -329,42 +330,36 @@ img {
     border-radius: 5px;
 }
 
-footer {
-    text-align: center;
+footer{
     background-color: #030800;
     margin: 0;
+
 }
 
 footer>p {
     margin: 0;
     background-color: var(--bege);
+    text-align: center;
 }
 
 .informacoes {
-    width:max-content;
+    width: 80%;
     display: flex;
-    align-items: center;
     margin: auto;
-    position: relative;
+    justify-content: space-between;
 }
 
 .interessado {
     color: var(--esmeralda);
-    align-content: space-between;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0 5% 2%;
-    display: inline;
+    margin: auto;
+    text-align: center;
 }
 
-.interessado>img {
-    margin: 0 1%;
-}
 
 .horario_funcionamento {
-    float: right;
-    margin: 2%;
+    margin: auto;
     color: var(--esmeralda);
+    text-align: center;
 }
 
 /*Portfólio*/
@@ -536,13 +531,14 @@ ul.redes_sociais {
     align-items: center;
     background-color: var(--fundo);
     padding-bottom: 1%;
-    margin: 0 1%;
+    margin: 0 1% ;
     border-radius: 5px;
 }
 
 .tabela {
     background-color: var(--fundo);
     margin-left: 10%;
+    font-size: 1.3em;
 }
 
 table {
@@ -557,17 +553,14 @@ th {
 }
 
 
-.campo {
-    display: flex;
-    flex-direction: column;
-}
-
 #form_orcamentos {
     width: 35%;
     margin-top: 1%;
-    margin-left: 15%;
-    border: solid 1px rgb(1, 51, 1);
+    margin-left: 10%;
+    padding-bottom: 2%;
+    background-color: rgba(1, 51, 1, 0.212);
     text-align: center;
+    border-radius: 5px;
 }
 
 .campo {
@@ -576,6 +569,8 @@ th {
     text-align: left;
     margin: 3% 1%;
     background-color: var(--fundo);
+    font-size: 1.1em;
+    border-radius: 5px;
 }
 
 .campo>input,

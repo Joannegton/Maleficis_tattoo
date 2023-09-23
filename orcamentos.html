@@ -3,17 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="../tecnologia_web/imagens/Agulha.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="style/style.css">
+    <link rel="shortcut icon"
+          href="../tecnologia_web/imagens/Agulha.png"
+          type="image/x-icon">
     <title>Orçamentos</title>
 </head>
 
 <body>
 
     <header class="faixa_menu">
-        <img class="logo" src="imagens/logo_maleficis.png" alt="logo">
+        <img class="logo"
+             src="imagens/logo_maleficis.png"
+             alt="logo">
         <nav id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,16 +29,23 @@
                 <li><a href="estudio.html">Tatuadora</a></li>
                 <li><a href="orcamentos.html">Orçamentos</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="loja.html">Loja</a></li>
+
             </ul>
         </nav>
         <aside class="redes_sociais">
-            <section class="contatos" style="right: auto;">
+            <section class="contatos"
+                     style="right: auto;">
                 <ul class="redes_sociais">
-                    <li><a href='https://www.instagram.com/maleficis.tattoo/' target="_blank"><img id="insta"
-                                src="imagens/insta.png" width="55vw" alt="insta"></a></li>
-                    <li><a href="https://wa.me/5511963817270" target="_blank"><img id="whats" src="imagens/whats.png"
-                                alt="whatsapp" width="55vw"></a></li>
+                    <li><a href='https://www.instagram.com/maleficis.tattoo/'
+                           target="_blank"><img id="insta"
+                                 src="imagens/insta.png"
+                                 width="55vw"
+                                 alt="insta"></a></li>
+                    <li><a href="https://wa.me/5511963817270"
+                           target="_blank"><img id="whats"
+                                 src="imagens/whats.png"
+                                 alt="whatsapp"
+                                 width="55vw"></a></li>
                 </ul>
         </aside>
 
@@ -83,21 +97,37 @@
                 </table>
             </div>
 
-            <form action="bancodados.php" method="post" autocomplete="on" id="form_orcamentos">
+            <form action="bancodados.php"
+                  method="post"
+                  autocomplete="on"
+                  id="form_orcamentos">
 
                 <div class="campo">
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" autocomplete="nome" placeholder="Wellington Joanne"
-                        autocomplete='on'>
+                    <input type="text"
+                           id="nome"
+                           name="nome"
+                           autocomplete="nome"
+                           placeholder="Wellington Joanne"
+                           autocomplete='on'>
                 </div>
                 <div class="campo">
                     <label for="tel">Whatsapp:</label>
-                    <input type="text" id="tel" name="tel" autocomplete="tel" placeholder="ex: 11912345678">
+                    <input type="text"
+                           id="tel"
+                           name="tel"
+                           autocomplete="tel"
+                           placeholder="ex: 11912345678">
                 </div>
                 <div class="campo">
                     <label for="tom_pele">Tom de pele:</label>
-                    <img src="imagens/tons_pele.png" alt="Tons de pele" width="55%" style="margin: 1% 0" ;>
-                    <select name="tom_pele" id="selecionador">
+                    <img src="imagens/tons_pele.png"
+                         alt="Tons de pele"
+                         width="55%"
+                         style="margin: 1% 0"
+                         ;>
+                    <select name="tom_pele"
+                            id="selecionador">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -107,30 +137,49 @@
                     </select>
                 </div>
                 <div class="campo">
-                    <label for="local">Local do corpo</label>
-                    <input type="text" id="local" name="local" autocomplete="off" placeholder="ex: Antebraço">
+                    <label for="local">Local do corpo:</label>
+                    <input type="text"
+                           id="local"
+                           name="local"
+                           autocomplete="off"
+                           placeholder="ex: Antebraço">
                 </div>
                 <div class="campo">
-                    <label for="dimensoes">Dimensões da Tattoo(cm)</label>
-                    <input type="text" id="dimensoes" name="dimensoes" autocomplete="off" placeholder="ex: 10cm x 6cm">
+                    <label for="dimensoes">Dimensões da Tattoo(cm):</label>
+                    <input type="text"
+                           id="dimensoes"
+                           name="dimensoes"
+                           autocomplete="off"
+                           placeholder="ex: 10cm x 6cm">
                 </div>
                 <div class="campo">
-                    <label for="data">Data do Rabisco</label>
-                    <input type="datetime-local" name="data" id="data" autocomplete="off">
+                    <label for="data">Data do Rabisco:</label>
+                    <input type="datetime-local"
+                           name="data"
+                           id="data"
+                           autocomplete="off">
                 </div>
                 <div class="campo">
-                    <label for="arquivo">Imagem de exemplo</label>
-                    <input type="file" name="arquivo" id="arquivo">
+                    <label for="arquivo">Imagem de exemplo:</label>
+                    <input type="file"
+                           name="arquivo"
+                           id="arquivo">
                 </div>
                 <div class="campo">
-                    <label for="arquivo2">Imagem do local(corpo)</label>
-                    <input type="file" name="arquivo2" id="arquivo">
+                    <label for="arquivo2">Imagem do local(corpo):</label>
+                    <input type="file"
+                           name="arquivo2"
+                           id="arquivo">
                 </div>
                 <div class="campo">
                     <label for="historia">Conte a historia da sua Tattoo:</label>
-                    <textarea name="historia" id="historia" rows="10"></textarea>
+                    <textarea name="historia"
+                              id="historia"
+                              rows="10"></textarea>
                 </div>
-                <input type="submit" value="Enviar" class="botao">
+                <input type="submit"
+                       value="Enviar"
+                       class="botao">
             </form>
         </section>
     </main>
@@ -139,15 +188,18 @@
     <aside class="informacoes">
         <div class="interessado">
             <h2>Quer fazer uma tatuagem?</h2>
-            <button class="botao"><a href="orcamentos.html">Solicite Orçamento</a></button>
-            <img src="imagens/linha_verde.png" width="200px">
+            <button class="botao"><a href="orcamentos.html">Solicite Orçamento</a></button><br>
+            <img src="imagens/linha_verde.png"
+                 width="200px">
         </div>
         <div class="horario_funcionamento">
             <h2>Segunda a Sabado</h2>
             <h2>10:00 - 19:00</h2>
         </div>
     </aside>
-    <p>Desenvolvido por <strong>&copy;</strong><a class="externo" href="https://www.instagram.com/joanne_gton/ "
-            target="_blank"><strong> Galbarini</strong></a></p>
+    <p><a class="externo"
+           href="https://www.instagram.com/joanne_gton/ "
+           target="_blank"><strong> Site em desenvolvimento</strong></a></p>
 </footer>
+
 </html>
