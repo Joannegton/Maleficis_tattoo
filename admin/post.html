@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="post.css" media="all">
+    
+</head>
+<body>
+    <section class="postagens">
+        <form id="postagens" action="post.php" method="post" autocomplete="on">
+            <label for="titulo">Título:</label>
+            <input type="text" name="titulo" id="titulo">
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></textarea>
+
+            <input type="file" name="foto" id="foto" required>
+
+            <input id="enviar" type="submit" value="Enviar" onclick="postar()">
+            
+            
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
