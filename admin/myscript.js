@@ -9,6 +9,12 @@ function tem_foto(){
 
 
 
-function enviar_post(){
-    
+
+
+function postar(){
+    let tittle = document.querySelector('.titulo')
+    let description = document.querySelector('.descricao')
+
+    tittle.innerHTML = 'titulo'
+    description.innerHTML = descricao
 }
