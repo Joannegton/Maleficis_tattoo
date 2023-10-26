@@ -1,3 +1,15 @@
+//Aumenta a imagem ao passar o mouse
+const imagem_pura = document.querySelectorAll(".foto")
+
+imagem_pura.forEach((img) => {
+    img.addEventListener('mouseover', () =>{
+        img.style.transform = 'scale(1.05)';
+    })
+    img.addEventListener('mouseout', () =>{
+        img.style.transform = '';
+    });
+});
+
 // Adicione um evento de clique a todas as imagens com a classe .imagem-ampliavel
 const imagensAmpliaveis = document.querySelectorAll(".foto");
 
@@ -23,3 +35,4 @@ imagem.addEventListener("click", () => {
     });
 });
 });
+
