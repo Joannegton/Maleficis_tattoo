@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Upload de Imagens</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Envio de Imagens</title>
 </head>
 <body>
-    <h1>Envie uma Imagem</h1>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="imagem" accept="image/*" required>
+    <h1>Envio de Dados e Imagens</h1>
+    <form action="enviar" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="imagem1">Imagem 1:</label>
+        <input type="file" name="imagens" id="imagem1" required>
+        <br>
+        <label for="imagem2">Imagem 2:</label>
+        <input type="file" name="imagens" id="imagem2" required>
+        <br>
         <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
+
+
