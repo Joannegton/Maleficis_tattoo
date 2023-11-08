@@ -83,6 +83,7 @@ img {
     transition: all .5s ease;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
+    z-index: 10;
 }
 
 .logo {
@@ -149,7 +150,33 @@ img {
     height: 250px;
     width: 800px;
     margin: 3px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
+.container_button{
+    position: absolute;
+    justify-content: center;
+    bottom: 10px;
+}
+
+.ball1, .ball2{
+    display: inline-block;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img_slider {
+    max-width: 800px;
+    max-height: 300px;
+}
+
+#cor_visualizacao{
+    color: black;
+    background-color: rgba(119, 119, 119, 0.486);
+    margin: 1%;
 }
 
 .container_somos {

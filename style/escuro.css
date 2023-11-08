@@ -3,7 +3,7 @@
 :root {
     --esmeralda: #23d16c;
     --bege: #F2e2d2;
-    --fundo: #000000cb;
+    --fundo: #0000009c;
     --fundo_post: #948e878f;
 }
 
@@ -133,90 +133,6 @@ img {
 }
 
 /*Hover Redes*/
-#Port_01:hover {
-    transform: scale(1.05);
-}
-
-#Port_02:hover {
-    transform: scale(1.05);
-}
-
-#Port_03:hover {
-    transform: scale(1.05);
-}
-
-#Port_04:hover {
-    transform: scale(1.05);
-}
-
-#Port_05:hover {
-    transform: scale(1.05);
-}
-
-#Port_06:hover {
-    transform: scale(1.05);
-}
-
-#Port_07:hover {
-    transform: scale(1.05);
-}
-
-#Port_08:hover {
-    transform: scale(1.05)
-}
-
-#Port_09:hover {
-    transform: scale(1.05);
-}
-
-#Port_10:hover {
-    transform: scale(1.05);
-}
-
-#Port_11:hover {
-    transform: scale(1.05);
-}
-
-#Port_12:hover {
-    transform: scale(1.05);
-}
-
-#Port_13:hover {
-    transform: scale(1.05);
-}
-
-#Port_14:hover {
-    transform: scale(1.05);
-}
-
-#Port_15:hover {
-    transform: scale(1.05);
-}
-
-#Port_16:hover {
-    transform: scale(1.05);
-}
-
-#Port_17:hover {
-    transform: scale(1.05);
-}
-
-#Port_18:hover {
-    transform: scale(1.05);
-}
-
-#Port_19:hover {
-    transform: scale(1.05);
-}
-
-#Port_20:hover {
-    transform: scale(1.05);
-}
-
-#Port_21:hover {
-    transform: scale(1.05);
-}
-
 #insta:hover {
     transform: scale(1.2);
 }
@@ -230,6 +146,12 @@ img {
 }
 
 /*home*/
+#cor_visualizacao{
+    color: white;
+    background-color: rgba(119, 119, 119, 0.486);
+    margin: 1%;
+}
+
 .slider {
     height: 250px;
     width: 800px;

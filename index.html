@@ -22,10 +22,9 @@
                 <li><a href="estudio.html">Tatuadora</a></li>
                 <li><a href="orcamentos.html">Orçamentos</a></li>
                 <li><a href="blog.html">Blog</a></li>
-            
             </ul>
         </nav>
-
+        
         <aside class="redes_sociais">
             <section class="contatos" style="right: auto;">
                 <ul class="redes_sociais">
@@ -38,9 +37,17 @@
     </header>
 
     <main>
+        <select id="cor_visualizacao">
+            <option value="claro">Tema claro'</option>
+            <option value="escuro">Tema escuro</option>
+        </select>
 
         <div class="slider">
-            <img src="imagens/banner_test.png" alt="promoções">
+            <img class="img_slider" >
+            <div class="container_button">
+                <aside class="ball1">&#9864;</aside>
+                <aside class="ball2">&#9865;</aside>
+            </div>
         </div>
         <section class="container_somos">
             <img src="imagens/tatuadora.jpeg" alt="Kathellen Tavares">
@@ -57,11 +64,6 @@
                 <button class="botao"><a href="estudio.html">Artistas</a></button>
             </aside>
         </section>
-
-        <select id="cor_visualizacao">
-            <option value="claro">Tema claro'</option>
-            <option value="escuro">Tema escuro</option>
-        </select>
 
         <section class="blog">
             <h2 class="subtitulo">Conheça também alguns artigos de nosso blog</h2>
@@ -145,4 +147,5 @@
 </footer>
 
 <script src="script/night_mode.js"></script>
+<script src="script/Portfolio.js"></script>
 </html>
