@@ -61,11 +61,6 @@ ball2.addEventListener("click", () => {
 });
 
 
-
-
-
-
-
 //night_mode
 
 const cor_visualizacao = document.querySelector("#cor_visualizacao")
@@ -78,6 +73,60 @@ cor_visualizacao.addEventListener("change", function(){
         night_mode.setAttribute("href", 'style/escuro.css');
     }
 })
+
+// Formulario verificações
+function form_orcamentos(){
+    var nome = document.getElementById('nome').value;
+    if(nome.length == 0){
+        document.querySelector("#erro_nome").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('nome').style.background = "#ffc1c1";
+        return false;
+    } 
+
+    var tel = document.querySelector("#tel").value;
+    if( tel.length == 0){
+        document.querySelector("#erro_whats").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('tel').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    var dimensoes = document.querySelector("#dimensoes").value;
+    if( dimensoes.length == 0){
+        document.querySelector("#erro_dimensoes").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('dimensoes').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    var data = document.querySelector("#data").value;
+    if( data.length == 0){
+        document.querySelector("#erro_data").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('data').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    var img1 = document.querySelector("#arquivo1").value;
+    if( img1.length == 0){
+        document.querySelector("#erro_img1").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('arquivo1').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    var img2 = document.querySelector("#arquivo2").value;
+    if( img2.length == 0){
+        document.querySelector("#erro_img2").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('arquivo2').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    var historia = document.querySelector("#historia").value;
+    if( historia.length == 0){
+        document.querySelector("#erro_historia").textContent = "Preenchimento Obrigatório!";
+        document.getElementById('historia').style.background = "#ffc1c1";
+        return false;
+    }   
+
+    document.form1.submit();
+}
 
 
 

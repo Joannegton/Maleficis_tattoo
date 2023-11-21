@@ -97,7 +97,7 @@
                 </table>
             </div>
 
-            <form action="bancodados.php"
+            <form name="form1" action="#"
                   method="post"
                   autocomplete="on"
                   id="form_orcamentos">
@@ -110,6 +110,7 @@
                            autocomplete="nome"
                            placeholder="Wellington Joanne"
                            autocomplete='on'>
+                    <span id="erro_nome"></span>
                 </div>
                 <div class="campo">
                     <label for="tel">Whatsapp:</label>
@@ -118,6 +119,7 @@
                            name="tel"
                            autocomplete="tel"
                            placeholder="ex: 11912345678">
+                    <span id="erro_whats"></span>
                 </div>
                 <div class="campo">
                     <label for="tom_pele">Tom de pele:</label>
@@ -143,6 +145,7 @@
                            name="local"
                            autocomplete="off"
                            placeholder="ex: Antebraço">
+                    <span id="erro_local"></span>
                 </div>
                 <div class="campo">
                     <label for="dimensoes">Dimensões da Tattoo(cm):</label>
@@ -151,6 +154,7 @@
                            name="dimensoes"
                            autocomplete="off"
                            placeholder="ex: 10cm x 6cm">
+                    <span id="erro_dimensoes"></span>
                 </div>
                 <div class="campo">
                     <label for="data">Data do Rabisco:</label>
@@ -158,28 +162,35 @@
                            name="data"
                            id="data"
                            autocomplete="off">
+                    <span id="erro_data"></span>
                 </div>
                 <div class="campo">
                     <label for="arquivo">Imagem de exemplo:</label>
                     <input type="file"
                            name="arquivo"
-                           id="arquivo">
+                           id="arquivo1"
+                           required>
+                    <span id="erro_img1"></span>
                 </div>
                 <div class="campo">
                     <label for="arquivo2">Imagem do local(corpo):</label>
                     <input type="file"
                            name="arquivo2"
-                           id="arquivo">
+                           id="arquivo2"
+                           required>
+                    <span id="erro_img2"></span>
                 </div>
                 <div class="campo">
                     <label for="historia">Conte a historia da sua Tattoo:</label>
                     <textarea name="historia"
                               id="historia"
                               rows="10"></textarea>
+                    <span id="erro_historia"></span>
                 </div>
                 <input type="submit"
                        value="Enviar"
-                       class="botao">
+                       class="botao"
+                       onclick="form_orcamentos()">
             </form>
         </section>
     </main>
@@ -202,4 +213,5 @@
            target="_blank"><strong> Site em desenvolvimento</strong></a></p>
 </footer>
 
+<script src="script/Portfolio.js"></script>
 </html>
