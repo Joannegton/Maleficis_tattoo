@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,15 @@
 </head>
 <body>
     <section class="postagens">
-        <form id="postagens" action="post.php" method="post" autocomplete="on">
+        <form id="postagens" action="../servidor/postar.jsp" method="post" autocomplete="on">
             <label for="titulo">Título:</label>
             <input type="text" name="titulo" id="titulo">
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></textarea>
 
-            <input type="file" name="foto" id="foto" required>
+            <input type="file" name="foto1" id="foto" required>
+            <input type="file" name="foto2" id="foto" >
+            <input type="file" name="foto3" id="foto" >
 
             <input id="enviar" type="submit" value="Enviar" onclick="postar()">
             
