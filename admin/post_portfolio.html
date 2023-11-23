@@ -20,7 +20,8 @@
 
 
     <section class="postagens" >
-        <form id="post_portfolio" action="../servidor/postar_portfolio.jsp" method="post" autocomplete="on">
+        <form id="post_portfolio" action="../servidor/postar_portfolio.jsp" method="post" enctype="multipart/form-data" autocomplete="on">
+            Selecione uma imagem para fazer upload:
             <label for="foto">Título:</label>          
             <input type="file" name="foto" id="foto" required>
             
