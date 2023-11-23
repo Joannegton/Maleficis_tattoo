@@ -10,7 +10,8 @@
 
 body{
     background: rgba(5, 145, 0, 0.596) url(../imagens/fundo_teste.jpg) left top repeat fixed;
-    width: 100vw;
+    margin: auto;
+    width: 80%;
     height: 100vh;
 }
 
@@ -138,6 +139,69 @@ form > a.botao:hover{
 form> a.botao > span{
     font-size: 0.9em; 
 }
+
+
+/*post.html*/
+section{
+    background-color: rgba(0, 255, 55, 0.438);
+    width: 90vw;
+    margin: auto;
+}
+form#postagens{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+form#postagens > label{
+    width: 70%;
+    background-image: linear-gradient(to right, rgb(148, 147, 147), transparent);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bolder ;
+    display: block;
+    text-align: left;
+    margin: 3px auto 0px;
+    
+}
+form > input#titulo{
+    width: 80%;
+}
+form > textarea#descricao{
+    width: 80%;
+    height: 300px;
+    margin-top: 1px;
+}
+
+form#postagens > input#foto{
+    display: block;
+    margin: auto;
+    width: 200px;
+    background-color: rgb(148, 147, 147);
+}
+
+form#postagens > input#enviar{
+    width: 25%;
+    height: 20px;
+    font-size: .8rem;
+    font-weight: bolder;
+    padding-bottom: 2px;
+    margin: 3px auto;
+    background-color: rgb(148, 147, 147);
+    border: none;
+    
+}
+
+form#postagens > input#enviar:hover, input#foto:hover{
+    background-color: rgb(0, 5, 5);
+    color: aliceblue;
+    cursor: pointer;
+    border: .5px solid white;
+}
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
     
