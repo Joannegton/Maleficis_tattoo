@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="admin.css" media="all">
+    
+</head>
+<body>
+
+    <nav class="menu">
+        <img class="logo" src="../imagens/logo_maleficis.png" alt="logo">
+        <ul>
+            <li><a href="post_blog.html">Postar No Blog</a></li>
+            <li><a href="post_portfolio.html">Postar No Portfolio</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="postagens" >
+        <form id="post_portfolio" action="../servidor/postar_portfolio.jsp" method="post" autocomplete="on">
+            <label for="foto">Título:</label>          
+            <input type="file" name="foto" id="foto" required>
+            
+
+            <input id="enviar" type="submit" value="Enviar" >
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

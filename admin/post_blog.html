@@ -9,10 +9,20 @@
     
 </head>
 <body>
+
+    <nav class="menu">
+        <img class="logo" src="../imagens/logo_maleficis.png" alt="logo">
+        <ul>
+            <li><a href="post_blog.html">Postar No Blog</a></li>
+            <li><a href="post_portfolio.html">Postar No Portfolio</a></li>
+        </ul>
+    </nav>
+
+
     <section class="postagens">
-        <form id="postagens" action="../servidor/postar.jsp" method="post" autocomplete="on">
+        <form action="../servidor/postar.jsp" method="post" autocomplete="on">
             <label for="titulo">Título:</label>
-            <input type="text" name="titulo" id="titulo">
+            <input type="text" name="titulo" class="titulo">
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></textarea>
 
