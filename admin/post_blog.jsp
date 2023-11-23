@@ -2,7 +2,7 @@
 <%
    //verifica se a session chamada usuario existe
    if (  session.getAttribute("usuario") == null ) {
-        response.sendRedirect("../admin/login.html") ;
+        response.sendRedirect("../admin/admin.html") ;
    }
    else
    {
@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
-    <link rel="stylesheet" href="admin.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
     
 </head>
 <body>
@@ -46,9 +46,7 @@
             <input id="enviar" class="botao" type="submit" value="Enviar" >
         </form>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
 
-<%
-   }%>
+<%}%>
