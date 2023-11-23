@@ -97,7 +97,7 @@ form > input{
     width: 80%;
 }
 
-form > input[type=submit]{
+.enviar{
     display: block;
     font-size: 1.1em;
     width: 100%;
@@ -107,7 +107,7 @@ form > input[type=submit]{
     border-radius: 5px;
 }
 
-form > input[type=submit]:hover{
+.enviar:hover{
     background-color: rgba(137, 43, 226, 0.63);
 }
 
@@ -133,136 +133,3 @@ form > a.botao:hover{
 form> a.botao > span{
     font-size: 0.9em; 
 }
-
-
-/*menu*/
-
-.menu {
-    background: linear-gradient(to left, #ece9e6da, #000000e8 40%);
-    position: sticky;
-    top: 0;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    transition: all .5s ease;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-}
-
-.logo {
-    width: 11vw;
-    margin-left: 1%;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 70%;
-}
-
-.menu ul li {
-    display: inline;
-    margin: auto;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #23d16c;
-    padding: 10px;
-    font-size: 1.4em;
-    font-weight: bolder;
-}
-
-.menu ul li a:hover {
-    text-decoration: underline;
-    color: #04bdad;
-}
-/*post_blog.html*/
-
-.postagens{
-    background-color: rgba(0, 255, 55, 0.438);
-    padding: 5px 0px;
-    text-align: center;
-    margin: auto;
-    width: 90%;
-}
-
-.postagens > form > label{
-    width: 80%;
-    background-image: linear-gradient(to right, rgb(148, 147, 147), transparent);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bolder ;
-    display: block;
-    text-align: left;
-    margin: 5px auto 0px;
-
-    
-}
-.titulo{
-    width: 80%;
-    height: 25px;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(211, 212, 212, 0.966);
-    font-weight: bolder;
-
-}
-#descricao{
-    width: 80%;
-    height: 300px;
-    margin-top: 1px;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(211, 212, 212, 0.966);
-}
-
-
-#foto{
-    background-color: rgba(112, 112, 107, 0.795);
-    font-size: .8em;
-    margin: 2px 0px 2px 10%;
-    width: 200px;
-    display: block;
-    
-}
-
-
-.botao{
-    width: 100px;
-    height: 30px;
-    font-size: 1.3em;
-    font-weight: bolder;
-    margin: 15px auto;
-    background-color: rgb(148, 147, 147);
-    border: none;
-    
-}
-
-form#postagens > input#enviar:hover, input#foto:hover{
-    background-color: rgb(2, 90, 55);
-    color: aliceblue;
-    cursor: pointer;
-    border: .5px solid white;
-}
-
-/*post_portfolio.html*/
-#post_portfolio{
-    width: 50%;
-    border: solid 1px;
-    margin: auto;
-
-}
-
-
-
-@media screen and (min-width: 768px) {
-    
-section#login{
-    width: 50vw;
-    height: 470px;
-}
-
-
-}
-

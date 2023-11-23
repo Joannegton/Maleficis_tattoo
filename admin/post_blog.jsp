@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
-    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="style/style.css" media="all">
     
 </head>
 <body>
@@ -25,12 +25,12 @@
         <img class="logo" src="../imagens/logo_maleficis.png" alt="logo">
         <ul>
             <li><a href="post_blog.jsp">Postar No Blog</a></li>
-            <li><a href="post_portfolio.html">Postar No Portfolio</a></li>
+            <li><a href="post_portfolio.jsp">Postar No Portfolio</a></li>
         </ul>
         <button type="button" class="botao"><a href='../servidor/logout.jsp'>Sair</a></button>
     </nav>
 
-    <%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%>
+    <div class="recepcao"><%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%></div>
 
     <section class="postagens">
         <form action="../servidor/postar.jsp" method="post" autocomplete="on">
@@ -39,11 +39,11 @@
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></textarea>
 
-            <input type="file" name="foto1" id="foto" required>
-            <input type="file" name="foto2" id="foto" >
-            <input type="file" name="foto3" id="foto" >
+            <input type="file" name="foto1" class="foto" required>
+            <input type="file" name="foto2" class="foto" >
+            <input type="file" name="foto3" class="foto" >
 
-            <input id="enviar" class="botao" type="submit" value="Enviar" >
+            <input class="botao"  type="submit" value="Enviar" >
         </form>
     </section>
 </body>
