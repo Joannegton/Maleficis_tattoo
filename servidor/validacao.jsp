@@ -6,40 +6,40 @@
     String usuario = "root";
     String senha = "";
 
+    //Variaveis que armazena informações digitadas pelo usuário
+    String vlogin = request.getParameter("login") ;
+    String vsenha = request.getParameter("senha") ;
+
     String driver = "com.mysql.jdbc.Driver";
 
-    try {
-        Class.forName(driver);
-        Connection conexao = DriverManager.getConnection(endereco, usuario, senha);
+    //Carregar o driver na memória
+    Class.forName( driver ) ;
 
-        String sql = "SELECT * FROM usuario";
-        PreparedStatement stm = conexao.prepareStatement(sql);
-        ResultSet dados = stm.executeQuery();
+    //Cria a variavel para conectar com o banco de dados
+    Connection conexao ;
 
-        boolean autenticado = false;
+    //Abrir a conexao com o banco de dados
+    conexao = DriverManager.getConnection(endereco, usuario, senha) ;
 
-        while (dados.next()) {
-            String email = dados.getString("email");
-            String senhaBanco = dados.getString("senha");
-            String flogin = request.getParameter("login");
-            String fsenha = request.getParameter("senha");
-            if (email.equals(flogin) && senhaBanco.equals(fsenha)) {
-                autenticado = true;
-                break;
-            }
-        }
+    String sql = "SELECT * FROM usuario WHERE email=? AND senha=?" ;
 
-        if (autenticado) {
-            out.print("arrasou");
-        } else {
-            out.print("deu ruim");
-        }
+    //Cria o statement para executar o comando no banco
+    PreparedStatement stm = conexao.prepareStatement(sql) ;
 
-        // Fechar a conexão
-        conexao.close();
-    } catch (Exception e) {
-        e.printStackTrace();
-        out.print("Erro: " + e.getMessage());
+    stm.setString( 1 , vlogin ) ;
+    stm.setString( 2 , vsenha ) ;
+
+    ResultSet  dados = stm.executeQuery() ;
+
+    if ( dados.next()) {
+        //cria a session chamada usuario
+        session.setAttribute("usuario" , dados.getString("nome_completo") ) ;
+        response.sendRedirect("../admin/post_blog.jsp") ;
+    }else{
+        response.sendRedirect("../admin/login.html") ;
     }
 
+
 %>
+
+
