@@ -27,12 +27,14 @@
             <li><a href="post_blog.jsp">Postar No Blog</a></li>
             <li><a href="post_portfolio.jsp">Postar No Portfolio</a></li>
         </ul>
-        <button type="button" class="botao"><a href='../servidor/logout.jsp'>Sair</a></button>
+        <div class="recepcao">
+            <%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%>
+            <button type="button" class="sair"><a href='../servidor/logout.jsp'>Sair</a></button>
+        </div>
     </nav>
 
-    <div class="recepcao"><%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%></div>
-
     <section class="postagens">
+    
         <form action="../servidor/postar.jsp" method="post" autocomplete="on">
             <label for="titulo">Título:</label>
             <input type="text" name="titulo" class="titulo">

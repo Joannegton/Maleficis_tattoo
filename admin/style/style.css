@@ -120,20 +120,44 @@ body{
     
 }
 
-.botao:hover, input#foto:hover{
+.botao:hover, input#foto:hover, .sair:hover{
     background-color: rgb(2, 90, 55);
     color: aliceblue;
     cursor: pointer;
     border: .5px solid white;
 }
 
+.recepcao{
+    background-color: rgba(0, 255, 55, 0.301);
+    width: 200px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.sair{
+    background-color: rgb(148, 147, 147);
+    margin: 2px auto;
+    display: block;
+    font-size: 1em;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sair a{
+    text-decoration: none;
+    color: black;
+}
 /*post_portfolio.html*/
 #post_portfolio{
     width: 50%;
     border: solid 1px;
     margin: auto;
-
 }
+
+
 
 
 

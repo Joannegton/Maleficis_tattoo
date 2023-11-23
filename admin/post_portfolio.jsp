@@ -26,13 +26,14 @@
             <li><a href="post_blog.jsp">Postar No Blog</a></li>
             <li><a href="post_portfolio.jsp">Postar No Portfolio</a></li>
         </ul>
-        <button type="button" class="botao"><a href='../servidor/logout.jsp'>Sair</a></button>
+        <div class="recepcao">
+            <%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%>
+            <button type="button" class="sair"><a href='../servidor/logout.jsp'>Sair</a></button>
+        </div>
     </nav>
 
-    <div class="recepcao"><%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%></div>
-
-
     <section class="postagens" >
+        
         <form id="post_portfolio" action="../servidor/postar_portfolio.jsp" method="post" enctype="multipart/form-data" autocomplete="on">
             Selecione uma imagem para fazer upload:
             <label for="foto">Título:</label>          

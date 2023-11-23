@@ -133,3 +133,14 @@ form > a.botao:hover{
 form> a.botao > span{
     font-size: 0.9em; 
 }
+
+@media screen and (min-width: 768px) {
+    
+    section#login{
+        width: 50vw;
+        height: 470px;
+    }
+    
+    
+    }
+    

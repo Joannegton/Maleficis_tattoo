@@ -36,7 +36,7 @@
         session.setAttribute("usuario" , dados.getString("nome_completo") ) ;
         response.sendRedirect("../admin/post_blog.jsp") ;
     }else{
-        response.sendRedirect("../admin/login.html") ;
+        response.sendRedirect("../admin/admin.html") ;
     }
 
 
