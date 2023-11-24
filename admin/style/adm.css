@@ -9,7 +9,7 @@
 }
 
 body{
-    background: rgba(5, 145, 0, 0.596) url(../imagens/fundo_teste.jpg) left top repeat fixed;
+    background: rgba(5, 145, 0, 0.596) url(../../imagens/fundo_teste.jpg) left top repeat fixed;
     margin: auto;
     width:80%;
     height: 99vh;
@@ -32,25 +32,37 @@ section#login{
     transition-timing-function: ease;
 }
 
-section#login > div#imagem{
+#container_imagem{
     background: rgba(8, 206, 67, 0.712);
     height: 220px;
     background-size: cover;
-    background-position: center;
+    text-align: center;
+
+}
+.logo{
+    background-color: rgba(0, 0, 0, 0.829);
+    border-radius: 5px;
+    height: 100px;
+    position: relative;
+    bottom: 50%;
+    right: 13%;
+
 }
 .img{
     height: 220px;
     width: 200px;
-    
+    margin-right: 115px;
 }
 
-section#login > div > form{
+
+#login > div > form{
     display: block;
     padding: 10px;
 }
 
-div > form > h1{
+h1{
     font-size: 1.5em;
+    text-align: center;
 }
 div > p{
     text-align: center;
@@ -133,6 +145,9 @@ form > a.botao:hover{
 form> a.botao > span{
     font-size: 0.9em; 
 }
+
+
+
 
 @media screen and (min-width: 768px) {
     
