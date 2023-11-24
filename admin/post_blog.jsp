@@ -29,6 +29,7 @@
         </ul>
         <div class="recepcao">
             <%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%>
+            <button type="button" class="sair"><a href='../index.html'>Site</a></button>
             <button type="button" class="sair"><a href='../servidor/logout.jsp'>Sair</a></button>
         </div>
     </nav>

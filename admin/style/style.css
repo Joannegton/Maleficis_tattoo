@@ -138,12 +138,13 @@ body{
 
 .sair{
     background-color: rgb(148, 147, 147);
-    margin: 2px auto;
-    display: block;
+    display: inline;
+    margin: 2px;
     font-size: 1em;
     width: 60px;
     border: none;
     border-radius: 5px;
+
 }
 
 .sair a{
