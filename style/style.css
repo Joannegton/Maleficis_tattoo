@@ -540,3 +540,13 @@ select {
     color: red;
     font-size: .8em;
 }
+
+.adm{
+    background-color: var(--esmeralda);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
