@@ -59,8 +59,33 @@ body{
     text-decoration: underline;
     color: #04bdad;
 }
-/*post_blog.html*/
 
+.recepcao{
+    background-color: rgba(0, 255, 55, 0.301);
+    width: 200px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.sair{
+    background-color: rgb(148, 147, 147);
+    display: inline;
+    margin: 2px;
+    font-size: 1em;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.sair a{
+    text-decoration: none;
+    color: black;
+}
+
+/*post_blog.html*/
 .postagens{
     background-color: rgba(0, 255, 55, 0.438);
     padding: 5px 0px;
@@ -108,6 +133,7 @@ body{
     
 }
 
+
 .botao{
     width: 100px;
     height: 30px;
@@ -127,30 +153,6 @@ body{
     border: .5px solid white;
 }
 
-.recepcao{
-    background-color: rgba(0, 255, 55, 0.301);
-    width: 200px;
-    text-align: center;
-    margin: 10px 10px 0 0;
-    padding-bottom: 2px;
-    border-radius: 5px;
-}
-
-.sair{
-    background-color: rgb(148, 147, 147);
-    display: inline;
-    margin: 2px;
-    font-size: 1em;
-    width: 60px;
-    border: none;
-    border-radius: 5px;
-
-}
-
-.sair a{
-    text-decoration: none;
-    color: black;
-}
 /*post_portfolio.html*/
 #post_portfolio{
     width: 50%;

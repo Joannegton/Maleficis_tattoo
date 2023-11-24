@@ -28,7 +28,7 @@
             <li><a href="post_portfolio.jsp">Postar No Portfolio</a></li>
         </ul>
         <div class="recepcao">
-            <%out.print( "Bem vindo(a) " + session.getAttribute("usuario") ) ;%>
+            <%out.print( "<p>Bem vinda " + "<strong>" + session.getAttribute("usuario") + "</strong></p>" ) ;%>
             <button type="button" class="sair"><a href='../index.html'>Site</a></button>
             <button type="button" class="sair"><a href='../servidor/logout.jsp'>Sair</a></button>
         </div>
