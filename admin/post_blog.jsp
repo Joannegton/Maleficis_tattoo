@@ -35,7 +35,7 @@
     </nav>
 
     <section class="postagens">
-    
+        <h2 id="pagina">Postar no Blog</h2>
         <form action="../servidor/postar.jsp" method="post" autocomplete="on">
             <label for="titulo">Título:</label>
             <input type="text" name="titulo" class="titulo">

@@ -34,6 +34,8 @@
     </nav>
 
     <section class="postagens" >
+
+        <h2 id="pagina">Postar no Portfolio</h2>
         
         <form id="post_portfolio" action="../servidor/postar_portfolio.jsp" method="post" enctype="multipart/form-data" autocomplete="on">
             Selecione uma imagem para fazer upload:
