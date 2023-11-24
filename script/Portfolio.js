@@ -128,19 +128,6 @@ function form_orcamentos(){
     document.form1.submit();
 }
 
-//Validação de Login admin/admin.html
-
-function validarLogin() {
-    var username = document.getElementById('').value;
-    var password = document.getElementById('password').value;
-
-    // Simples validação de usuário e senha (substitua isso com sua lógica de validação real)
-    if (username === 'usuario' && password === 'senha') {
-        document.getElementById('error-message').innerText = 'Login bem-sucedido!';
-    } else {
-        document.getElementById('error-message').innerText = 'Login falhou. Verifique suas credenciais.';
-    }
-}
 
 
 
