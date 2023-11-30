@@ -18,7 +18,18 @@ body{
 
 /*menu*/
 
-
+.menu{
+    background: linear-gradient(to left, #ece9e67e, #000000a4 40%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    transition: all .5s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    z-index: 10;
+}
 
 .logo {
     width: 11vw;
@@ -86,7 +97,7 @@ body{
 
 #pagina{
     background-image: url(../../imagens/Banner_Fundo.png);
-    color: var(--esmeralda);
+    color: #23d16c;
     font-size: 2.1em;
     background-clip: inherit;
     background-repeat: no-repeat;
@@ -94,7 +105,7 @@ body{
     border-radius: 5px;
     text-align: center;
     padding: 1.5% 0;
-    margin: 0 0 15px;
+    margin: 0;
     position: initial;
 }
 
@@ -162,6 +173,51 @@ body{
     width: 50%;
     border: solid 1px;
     margin: auto;
+}
+
+
+/*Orcamentos*/
+
+.filtro{
+    display: inline-block;
+    margin: 5px 100px 5px 0;
+
+}
+h4, #adm_orcamentos, .txtfiltro{
+    display: inline-block;
+    font-size: .8em;
+}
+
+#selecionador{
+    font-size: .8em;
+    background-color: rgba(99, 98, 98, 0.705);
+}
+
+.tabela{
+    font-size: .8em;
+    border: 1px solid black;
+    background-color: rgba(99, 98, 98, 0.705);
+    border-collapse: collapse;
+    width: 98%;
+    margin: auto;
+}
+thead{
+    background-color: rgba(73, 156, 65, 0.596);;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+tr:hover{
+    background-color: #6495ED;
+}
+
+.coluna{
+    width: 88px;
 }
 
 
