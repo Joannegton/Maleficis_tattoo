@@ -36,19 +36,9 @@
     </nav>
 
     <section class="postagens">
-        <h2 id="pagina">Postar no Blog</h2>
-        <form action="../servidor/postar.jsp" method="post" autocomplete="on">
-            <label for="titulo">Título:</label>
-            <input type="text" name="titulo" class="titulo">
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea></textarea>
-
-            <input type="file" name="foto1" class="foto" required>
-            <input type="file" name="foto2" class="foto" >
-            <input type="file" name="foto3" class="foto" >
-
-            <input class="botao"  type="submit" value="Enviar" >
-        </form>
+        <h2 id="pagina">Orçamentos</h2>
+        
+        
     </section>
 </body>
 </html>
