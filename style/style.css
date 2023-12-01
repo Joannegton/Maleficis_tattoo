@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+@font-face {
+    font-family: font_tattoo;
+    src: url(../fonts/MiltonianTattoo-Regular.ttf);
+}
+
 :root {
     --esmeralda: #23d16c;
     --bege: #F2e2d2;
@@ -24,7 +29,7 @@ main {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
     border-radius: 5px;
 }
 
@@ -67,10 +72,7 @@ img {
     border-radius: 5px;
 }
 
-.flashes_fotos{
-    width: 26%;
-    display: inline;
-}
+
 
 /*menu*/
 .faixa_menu {
@@ -78,7 +80,7 @@ img {
     position: sticky;
     top: 0;
     display: flex;
-    height: 100px;
+    height: 150px;
     align-items: center;
     transition: all .5s ease;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -87,8 +89,8 @@ img {
 }
 
 .logo {
-    width: 12vw;
-    margin-left: 1%;
+    width: 13vw;
+    margin-left: 2%;
 }
 
 #menu ul {
@@ -97,6 +99,7 @@ img {
     padding: 0;
     text-align: center;
     display: flex;
+    font-size: 1.3em;
 }
 
 #menu ul li {
@@ -182,7 +185,7 @@ img {
 .container_somos {
     border-radius: 5px;
     display: flex;
-    margin: 2em 1em;
+    margin: 2em 1em 1em;
     background-color: var(--fundo);
     padding-top: 1em;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
@@ -191,9 +194,12 @@ img {
 .container_somos>img {
     height: 500px;
     border-radius: 5px;
-    margin: 0 1em;
+    margin: 1em;
 }
 
+.txtsomos{
+    margin: 2em 0 3em 0;
+}
 
 .container_somos>aside {
     margin: auto 10px;
@@ -221,6 +227,8 @@ img {
 
 .botao:hover{
     transform: scale(1.05);
+    background-color: rgba(137, 43, 226, 0.63);
+    cursor: pointer;
 }
 
 .blog {
@@ -229,6 +237,7 @@ img {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
     margin: 1em;
     border-radius: 5px;
+    padding-top: 1em;
 }
 
 
@@ -243,6 +252,7 @@ img {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
     margin: 1em;
     border-radius: 5px;
+    padding-top: 1em;
 }
 
 .container_video {
@@ -261,12 +271,24 @@ img {
     margin-right: none;
 }
 
+.flash_botao{
+    margin-top: 5%;
+}
+
+.flashs_fotos{
+    width: 26%;
+    display: inline;
+    margin: 2% 11%;
+    opacity: 60%;
+}
+
 .localizacao {
     text-align: center;
     background-color: var(--fundo_post);
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
     margin: 1%;
+    padding: 1% 0;
 }
 
 .maps {
@@ -309,11 +331,16 @@ footer>p {
 }
 
 /*Portfólio*/
+.portfolio {
+    background-color: var(--fundo);
+    padding: 1% 0;
+}
+
 .container_portfolio {
     display: flex;
     width: 98%;
     justify-content: space-between;
-    margin: 1%;
+    margin: 1% 1% 0;
 }
 
 .foto {
@@ -328,6 +355,7 @@ footer>p {
     width: 100%;
     height: 100%;
     background-color: rgba(1, 19, 0, 0.747);
+    z-index: 11;
 }
 
 .tela-cheia>img {
@@ -336,14 +364,11 @@ footer>p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.portfolio {
-    background-color: var(--fundo);
+    transform: translate(-50%, -50%);   
 }
 
 /*Flashs*/
+
 .container_foto {
     border: solid;
 }
@@ -360,21 +385,28 @@ footer>p {
 .interesse {
     padding-bottom: 10px;
     text-align: center;
+    margin-top: 3%;
 }
 
 .interesse>h3 {
-    margin: auto;
+    margin: .5% auto;
 }
 
 /* Artistas*/
 .container_frase {
     background-color: #23d16b5e;
-    padding: 0 20%;
+    padding: .1% 20%;
 }
 
+#fonte_externa{
+    font-family: font_tattoo;
+    font-size: 1.4em;
+    text-align: center;
+}
 .container_artista {
     display: flex;
-    margin: 5%;
+    margin: 0 5%;
+    padding: 1% 0;
 }
 
 .container_artista>aside {
@@ -481,14 +513,21 @@ ul.redes_sociais {
     border-radius: 5px;
 }
 
-.tabela {
-    background-color: var(--fundo);
-    margin-left: 10%;
-    font-size: 1.3em;
+.imgtbl{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
 }
-
+.imgtbl img{
+    width: 85%;
+    margin: 0 auto;
+}
 table {
     border-collapse: collapse;
+    margin: auto;
+    background-color: var(--fundo);
+    font-size: 1.3em;
 }
 
 td,
@@ -502,7 +541,6 @@ th {
 #form_orcamentos {
     width: 35%;
     margin-top: 1%;
-    margin-left: 10%;
     padding-bottom: 2%;
     background-color: rgba(1, 51, 1, 0.212);
     text-align: center;
@@ -549,5 +587,23 @@ select {
     margin: auto;
     position: relative;
     top: 40px;
+    font-size: 1.1em;
 }
+
+.adm a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.adm a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+.adm:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgba(137, 43, 226, 0.63);
+    
+}
+
 
