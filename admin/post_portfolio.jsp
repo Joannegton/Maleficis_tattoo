@@ -1,5 +1,7 @@
+
 <%@ page language="java" import="java.sql.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
+request.setCharacterEncoding("UTF-8");
    //verifica se a session chamada usuario existe
    if (  session.getAttribute("usuario") == null ) {
         response.sendRedirect("../admin/admin.html") ;

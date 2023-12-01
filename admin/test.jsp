@@ -1,57 +1,75 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*, java.io.*, java.util.Base64" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.io.InputStream" %>
+<%@ page import="java.util.Base64" %>
 
 <%
-// Variáveis para o banco de dados
+// variaveis para o banco de dados
 String banco = "test";
 String endereco = "jdbc:mysql://localhost:3306/" + banco;
 String usuario = "root";
 String senha = "";
 
-// Variável para o Driver
+// Variavel para o Driver
 String driver = "com.mysql.jdbc.Driver";
 
 // Carregar o driver na memória
 Class.forName(driver);
 
-// Criar a variável para conectar com o banco de dados
+// Cria a variavel para conectar com o banco de dados
 Connection conexao;
 
-// Abrir a conexão com o banco de dados
+// Abrir a conexao com o banco de dados
 conexao = DriverManager.getConnection(endereco, usuario, senha);
 
-// Verificar se o formulário foi submetido
-if (request.getMethod().equalsIgnoreCase("post")) {
-    // Obter os dados do formulário
+String sql = "SELECT * FROM orcamento";
 
-    Part imagemPart = request.getPart("imagem1");
-
-    // Preparar a consulta SQL para inserir os dados e a imagem
-    String sql = "INSERT INTO imagens (conteudo) VALUES (?)";
-    try (PreparedStatement statement = conexao.prepareStatement(sql)) {
-
-        // Ler os bytes da imagem
-        InputStream imagemStream = imagemPart.getInputStream();
-        byte[] imagemBytes = new byte[imagemStream.available()];
-        imagemStream.read(imagemBytes);
-
-        // Configurar o parâmetro BLOB
-        statement.setBytes(1, imagemBytes);
-
-        // Executar a inserção
-        statement.executeUpdate();
-    } catch (SQLException | IOException e) {
-        e.printStackTrace();
-    }
-}
+PreparedStatement stm = conexao.prepareStatement(sql);
+ResultSet dados = stm.executeQuery();
 %>
 
-<form action="test.jsp" method="post" enctype="multipart/form-data">
+<table class='tabela' border=1>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <!-- Outras colunas da tabela -->
+            <th>Imagem1</th>
+        </tr>
+    </thead>
+    <tbody>
 
+        <%
+        while (dados.next()) {
+            out.print("<tr>");
+            out.print("<td>");
+            out.print(dados.getString("id"));
+            out.print("</td>");
 
+            Blob imagemBlob = dados.getBlob("imagem1");
+            if (imagemBlob != null) {
+                InputStream inputStream = imagemBlob.getBinaryStream();
+                byte[] imagemBytes = new byte[(int) imagemBlob.length()];
+                inputStream.read(imagemBytes);
+                String imagemBase64 = Base64.getEncoder().encodeToString(imagemBytes);
+        %>
+                <td>
+                    <img src="data:image/jpeg;base64, <%= imagemBase64 %>" alt="Imagem1" style="max-width: 50px; max-height: 50px;">
+                </td>
+        <%
+            } else {
+                out.print("<td>N/A</td>");
+            }
 
-    <input type="file" name="imagem1" accept="image/*">
+            out.print("</tr>");
+        }
+        %>
 
-    <input type="submit" value="Enviar">
-</form>
+    </tbody>
+</table>
 
+<%
+// Fechar recursos
+dados.close();
+stm.close();
+conexao.close();
+%>
