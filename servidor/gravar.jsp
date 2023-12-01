@@ -42,8 +42,6 @@
     stm.execute();
     stm.close() ;
 
-    out.print("Dados gravados com sucesso!!!");
-    out.print("<br><br>") ;
-    out.print("<a href='cadastro.html'>Voltar</a>") ;
+    response.sendRedirect("../orcamentos.html") ;
 
 %>

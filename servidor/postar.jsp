@@ -32,15 +32,6 @@
     stm.execute();
     stm.close();
 
-    out.print("Dados gravados com sucesso!!!");
-    out.print("<br><br>") ;
-    out.print("<a href='../admin/post.html'>Voltar</a>") ;
-
-
-
-
-
-
-
+    response.sendRedirect("../admin/post_blog.jsp") ;
 
 %>
